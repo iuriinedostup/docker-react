@@ -20,7 +20,7 @@ jobs:
           context: .
           file: ./Dockerfile.dev
           tags: iuriinedostup/docker-react
-#          outputs: type=docker,dest=/tmp/docker-react.tar
+          outputs: type=docker,dest=/tmp/docker-react.tar
       - name: test app
         run: docker run -e CI=true iuriinedostup/docker-react npm run test
 
